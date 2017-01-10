@@ -1,0 +1,5 @@
+.grid-3 {
+    width: 5em;
+    height: 5em;
+    @include span(4 of 12);
+}

@@ -1,0 +1,19 @@
+//globals / variables
+@import "sass/variables";
+@import "sass/susy";
+//layouts
+@import "sass/layouts/body.scss";
+@import "sass/layouts/footer.scss";
+
+//modules
+@import "sass/modules/grid-3.scss";
+@import "sass/modules/profile-image.scss";
+@import "sass/modules/nav.scss";
+
+.name {
+    float: right;
+    color: #989898;
+    margin-right: .2em;
+}
+
+
