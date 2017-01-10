@@ -1,10 +1,12 @@
 footer {
     float: right;
-}
-footer .nav-item{
-    margin-right: 1.2em;
+    clear: both;
+    .nav-item{
+       p {
+            line-height: 10px;
+         }
+       margin-right: 1.2em;
+    }
 }
 
-footer .nav-item p {
-    line-height: 10px;
-}
+

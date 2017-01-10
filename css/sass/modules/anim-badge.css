@@ -1,0 +1,20 @@
+.anim-badge {
+  height: span(4 of 12);
+  background-color: #ff86e0;
+  background-image: url("../images/badge.jpg");
+  background-origin: center center;
+  filter: opacity(100%);
+  transition: filter .5s; }
+
+.badge-content {
+  padding: 0em .5em;
+  filter: opacity(0%);
+  transition: filter .5s;
+  width: 100%;
+  height: 100%; }
+
+.badge-content:hover {
+  filter: opacity(100%); }
+
+.anim-badge:hover {
+  filter: opacity(70%); }
