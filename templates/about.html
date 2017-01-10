@@ -1,22 +1,7 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Design 360 Paul Von Zimmerman</title>
-    <link rel=StyleSheet href="css/style.css" TYPE="text/css" >
-</head>
+{% extends "layout.html" %}
 
-<body>
-    <nav>
-        <ul>
-            <li class="selected nav-item"> <a href=""> Design 360 </a></li>
-            <li class="nav-item"> <a href="#"> Project 1</a></li>
-            <li class="nav-item"> <a href="#">Project 2</a></li>
-            <li class="nav-item name"> Design 360 </li>
-        </ul>
-    </nav>
-    <hr />
-    <div class="content">
+{% block content %}
+    <div class="about">
         <h1> Paul Von Zimmerman </h1>
         <h2> About me </h2>
         <article>
@@ -37,5 +22,4 @@
         </ul>
     </footer>
     <script src="http://livejs.com/live.js"></script>
-</body>
-</html>
+{% endblock %}
