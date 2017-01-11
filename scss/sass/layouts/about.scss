@@ -1,0 +1,4 @@
+.about {
+    @include span(5 of 12);
+    @include push(7 of 24);
+}
