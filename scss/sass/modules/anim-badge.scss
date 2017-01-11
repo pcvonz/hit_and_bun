@@ -8,10 +8,11 @@
     float: left;
     z-index: -1;
     background-image: url("../images/image_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-origin: center center;
-    filter: blur(5px);
-    filter: brightness(1);
-    transition: filter .2s;
+    filter: opacity(80%) brightness(1);
+    transition: 2s filter;
 
 }   
 
@@ -24,11 +25,10 @@
     display: inline-block;
     text-align: center;
     padding: 0em .5em;
-    transition: filter .5s;
     width: 100%;
     height: 100%;
     position: relative;
-    bottom: 210px;
+    bottom: 200px;
     left: -14px;
     color: black;
     transition: color .2s;

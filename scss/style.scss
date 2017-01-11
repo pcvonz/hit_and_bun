@@ -1,9 +1,13 @@
 //globals / variables
-@import "sass/variables";
 @import "sass/susy";
+@import "sass/variables";
+
 //layouts
 @import "sass/layouts/body.scss";
 @import "sass/layouts/footer.scss";
+@import "sass/layouts/list.scss";
+@import "sass/layouts/about.scss";
+@import "sass/layouts/l-content.scss";
 
 //modules
 @import "sass/modules/grid-3.scss";
