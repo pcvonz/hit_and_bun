@@ -1,6 +1,8 @@
 .grid-3 {
     @include span(4 of 12);
+    height: span(4 of 12);
 }
 .grid-3-last {
     @include span(4 of 12 last);
+    height: span(4 of 12);
 }
