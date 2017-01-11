@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+a:visited {
+  color: gray; }
+
 hr {
   margin: 0; }
 
@@ -6,14 +9,7 @@ body {
   background-color: #f6f6f6;
   padding: 10;
   color: #4a4a4a;
-  font-family: 'Fira Sans', sans-serif;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto; }
-  body:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  font-family: 'Fira Sans', sans-serif; }
 
 nav {
   background-color: white;
