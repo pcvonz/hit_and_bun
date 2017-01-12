@@ -1,0 +1,27 @@
+/*This was quite a pain to figure out. Lists have padding on them
+for the bullets. If you try to apply a susy grid to a ul
+element specifically, this padding throws off the grid. Wrap it in a div.
+
+The second thing that really got me was susy context. It works the same way
+that percentages work. If you span a div say 6 of 12, your new context is 6 columns
+for all child objects.
+*/
+
+.grid-4 {
+    //Span for the new mobile layout
+    @include span(2 of 4);
+
+    @include breakpoint($tablet) {
+        @include span(3 of 6 );
+    }
+}
+
+.grid-4-last {
+    //span for the new mobile layout
+    @include span(2 of 4 last);
+
+    @include breakpoint($tablet) {
+        @include span(3 of 6 last);
+    }
+}
+

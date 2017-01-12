@@ -6,12 +6,39 @@ hr {
   margin: 0; }
 
 body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-size: 26.31579%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
   background-color: #f6f6f6;
   padding: 10;
   color: #4a4a4a;
   margin: 0;
   padding: 0;
   font-family: 'Fira Sans', sans-serif; }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+@media (min-width: 620px) {
+  body {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top; }
+    body:after {
+      content: " ";
+      display: block;
+      clear: both; } }
 
 nav {
   background-color: white;
@@ -35,29 +62,31 @@ footer {
     footer .nav-item p {
       line-height: 10px; }
 
-.square-list {
+.square-list ul {
   list-style-type: square;
   text-align: left;
-  float: left;
   line-height: 1.3em; }
 
-.about {
-  width: 40.67797%;
-  float: left;
-  margin-right: 1.69492%;
-  margin-left: 29.41176%; }
+@media (min-width: 620px) {
+  .about {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 25.42373%; } }
 
-.grid-3 {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-  height: 32.20339%; }
+@media (min-width: 620px) {
+  .grid-3 {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    height: 32.20339%; } }
 
-.grid-3-last {
-  width: 32.20339%;
-  float: right;
-  margin-right: 0;
-  height: 32.20339%; }
+@media (min-width: 620px) {
+  .grid-3-last {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+    height: 32.20339%; } }
 
 .profile-image {
   margin: 0 auto;
@@ -73,7 +102,7 @@ footer {
   margin-bottom: 2.2em; }
 
 .nav-item {
-  float: left;
+  display: inline;
   list-style: none;
   padding: 6px;
   text-transform: uppercase; }
@@ -124,6 +153,34 @@ footer {
 
 .badge-content:hover {
   color: white; }
+
+/*This was quite a pain to figure out. Lists have padding on them
+for the bullets. If you try to apply a susy grid to a ul
+element specifically, this padding throws off the grid. Wrap it in a div.
+
+The second thing that really got me was susy context. It works the same way
+that percentages work. If you span a div say 6 of 12, your new context is 6 columns
+for all child objects.
+*/
+.grid-4 {
+  width: 47.36842%;
+  float: left;
+  margin-right: 5.26316%; }
+  @media (min-width: 620px) {
+    .grid-4 {
+      width: 48.27586%;
+      float: left;
+      margin-right: 3.44828%; } }
+
+.grid-4-last {
+  width: 47.36842%;
+  float: right;
+  margin-right: 0; }
+  @media (min-width: 620px) {
+    .grid-4-last {
+      width: 48.27586%;
+      float: right;
+      margin-right: 0; } }
 
 .name {
   float: right;
