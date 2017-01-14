@@ -1,6 +1,4 @@
 *.swp
 *.swo
-bin/
-include/
-lib/
-css/
+public/
+node_modules/

@@ -6,18 +6,18 @@ $susy: (
     use-custom: (rem: true,
     output: isolate,
     ),
- //   debug:(
- //       image: show
- //       ),
+    debug:(
+        image: show
+        ),
     );
 $mobile-layout: (
     columns: 4,
     global-box-sizing: border-box,
     use-custom: (rem: true,
     ),
- //   debug:(
- //       image: show
- //       ),
+    debug:(
+        image: show
+        ),
     );
 
 $tablet: 620px; 

@@ -1,0 +1,26 @@
+.anim-badge {
+    z-index: 100;
+}   
+.anim-badge:before {
+    content: "";
+    width: 100%;
+    height: span(3 of 4);
+    float: left;
+    z-index: -1;
+    background-image: url("../images/image_1.jpg");
+    background-origin: center center;
+    filter: blur(5px);
+}   
+
+.badge-content {
+    padding: 0em .5em;
+    transition: filter .5s;
+    width: 100%;
+    height: 100%;
+}
+
+.badge-content:hover {
+}
+
+.anim-badge:hover {
+}

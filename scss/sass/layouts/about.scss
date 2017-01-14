@@ -1,8 +1,0 @@
-@include breakpoint($tablet) {
-    .about {
-        @include span(6 of 12);
-        @include push(3 of 12);
-    }
-}
-
-

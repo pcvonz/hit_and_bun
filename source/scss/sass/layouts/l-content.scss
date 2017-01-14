@@ -1,0 +1,10 @@
+.content {
+    @include container(4 95%);
+}
+
+
+@include breakpoint($tablet) {
+    .content {
+        @include container(12 center 90%);
+    }
+}

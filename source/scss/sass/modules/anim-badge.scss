@@ -1,6 +1,7 @@
 .anim-badge {
     z-index: 100;
     height: 200px;
+    margin-bottom: 1em;
 }   
 .anim-badge::before {
     content: "";
@@ -12,35 +13,30 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: center center;
-    filter: brightness(1.2);
-    transition: 1s filter linear;
-    -webkit-transition: 1s -webkit-filter linear;
-    -moz-transition: 1s -moz-filter linear;
-    -ms-transition: 1s -ms-filter linear;
-    -o-transition: 1s -o-filter linear;
 
 }   
 
 .anim-badge:hover::before {
     content: "";
-    filter: brightness(0);
 }   
 
 .badge-content {
     display: inline-block;
     text-align: center;
-    padding: 0em .5em;
     width: 100%;
     height: 100%;
     position: relative;
     bottom: 200px;
-    left: -14px;
-    color: black;
+    color: rgba(255, 255, 255, 0);
     transition: color .2s;
+    background-color: rgba(219, 70, 180, .5);
+    transition: background-color 1s, color 1s;
+
 }
 
 .badge-content:hover {
     color: white;
+    background-color: rgba(219, 70, 180, .8);
 }
 
 .anim-badge:hover {

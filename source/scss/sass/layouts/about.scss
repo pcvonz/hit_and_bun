@@ -1,0 +1,11 @@
+
+.about {
+    @include container(8);
+}
+@include breakpoint($tablet) {
+    .about {
+        @include container(12 center 50%);
+    }
+}
+
+
