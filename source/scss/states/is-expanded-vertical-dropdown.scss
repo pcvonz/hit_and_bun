@@ -1,0 +1,8 @@
+.is-expanded-vertical-dropdown {
+    max-height: 0;
+    transition: max-height .5, overflow;
+    overflow: hidden;
+    @include breakpoint($tablet) {
+        overflow: visible;
+    }
+}

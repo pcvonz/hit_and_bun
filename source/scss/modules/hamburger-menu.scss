@@ -1,0 +1,24 @@
+.menu-container {
+  text-align: left;
+  list-style: none;
+  padding: .4em 2em;
+  float: left;
+  width: 100%;
+  @include breakpoint($tablet) {
+      display: none; 
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white; 
+    }
+
+}
+
+#menu-button {
+  cursor: pointer; }
+
+.menu-bar {
+  fill: black; 
+}

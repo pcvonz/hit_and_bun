@@ -1,0 +1,29 @@
+//globals / variables
+@import "susy";
+@import "breakpoint";
+@import "scss/variables";
+
+//layouts
+@import "scss/layouts/body.scss";
+@import "scss/layouts/footer.scss";
+@import "scss/layouts/list.scss";
+@import "scss/layouts/about.scss";
+@import "scss/layouts/l-content.scss";
+
+//modules
+@import "scss/modules/grid-3.scss";
+@import "scss/modules/profile-image.scss";
+@import "scss/modules/nav.scss";
+@import "scss/modules/anim-badge.scss";
+@import "scss/modules/grid-4.scss";
+@import "scss/modules/hamburger-menu.scss";
+
+//states
+@import "scss/states/is-expanded-vertical-dropdown.scss";
+
+.name {
+    float: right;
+    color: #989898;
+    margin-right: .2em;
+}
+
