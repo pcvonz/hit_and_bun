@@ -7,7 +7,7 @@ hr {
 }
 
    body {
-       background-color: #f6f6f6;
+       background-color: white;
        padding: 10;
        color: rgb(74, 74, 74);
        margin: 0;
@@ -25,15 +25,18 @@ nav {
     background-color: white;
     display: block;
     width: 100%;
-    height: 5em;
+    height: 7em;
     margin: 0;
     padding: 1.2em 0 1.2em 0;
     max-height: 200px;
-    transition: all 250ms;
+    transition: padding 250ms, height 250ms;
     overflow: hidden;
-    @include container(4 center 80%);
+    padding-left: 7%;
+    @include container(4 center);
+    background-color: pink;
     @include breakpoint($tablet) {
-        @include container(6 90%);
+        @include container(6);
+        background-color: white;
     }
     ul {
         li {
@@ -56,10 +59,12 @@ nav {
         height: 2.2em;
         margin: 0;
         padding: 0;
+        margin-left: 1em;
     }
 }
 
 .main {
+    clear: both;
 	@include breakpoint($tablet) {
 		@include span(6 of 12);
 		@include push(1 of 12);

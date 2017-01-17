@@ -6,9 +6,9 @@ $susy: (
     use-custom: (rem: true,
     output: isolate,
     ),
- //   debug:(
- //       image: show
- //       ),
+    debug:(
+        image: show
+        ),
     );
 
 $mobile-layout: (
@@ -16,9 +16,9 @@ $mobile-layout: (
     global-box-sizing: border-box,
     use-custom: (rem: true,
     ),
- //   debug:(
- //       image: show
- //       ),
+    debug:(
+        image: show
+        ),
     );
 
 $tablet: 620px; 

@@ -1,12 +1,19 @@
-@include breakpoint($tablet) {
-    .grid-3 {
-        @include span(4);
-        height: span(4);
+//@include breakpoint($tablet) {
+//    .grid-3 {
+//        @include span(4);
+//        height: span(4);
+//    }
+//}
+//@include breakpoint($tablet) {
+//    .grid-3-last {
+//        @include span(4 last);
+//        height: span(4 last);
+//    }
+//}
+
+.grid-3 {
+    @include breakpoint($tablet) {
+        @include gallery (4 of 12 0);
     }
 }
-@include breakpoint($tablet) {
-    .grid-3-last {
-        @include span(4 last);
-        height: span(4 last);
-    }
-}
+
