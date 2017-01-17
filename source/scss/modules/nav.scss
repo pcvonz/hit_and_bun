@@ -1,12 +1,12 @@
 .nav-item {
-    display: inline;
     list-style: none;
-    padding: 6px;
+    padding: 0;
+    padding: 1em 0 1em 0;
     text-transform: uppercase;
 }
 
-.selected a {
-    color: gray;
+#selected a {
+    color: #ce47a1;
     font-weight: 600;
 }
 

@@ -25,10 +25,32 @@ nav {
     background-color: white;
     display: block;
     width: 100%;
-    height: 2.2em;
+    height: 5em;
     margin: 0;
     padding: 1.2em 0 1.2em 0;
+    max-height: 200px;
+    transition: all 250ms;
+    overflow: hidden;
+    @include container(4 center 80%);
+    @include breakpoint($tablet) {
+        @include container(6 90%);
+    }
     ul {
+        li {
+			white-space: nowrap;
+            @include span(2 of 4);
+        }
+        li:nth-child(n+2) {
+            @include span(2 of 4 last);
+        }
+        @include breakpoint($tablet) {
+            li {
+                @include span(1 of 6);
+            }
+            li:nth-child(n+2) {
+                @include span(1 of 6);
+            }
+        }
         display: block;
         width: 100%;
         height: 2.2em;
@@ -36,3 +58,11 @@ nav {
         padding: 0;
     }
 }
+
+.main {
+	@include breakpoint($tablet) {
+		@include span(6 of 12);
+		@include push(1 of 12);
+	}
+}
+	
