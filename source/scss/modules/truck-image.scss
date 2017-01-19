@@ -1,0 +1,7 @@
+.truck-image {
+    @include span(8 of 12);
+    height: 300px;
+    background-color: black;
+    margin-top: 2em;
+
+}

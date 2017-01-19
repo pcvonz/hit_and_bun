@@ -9,6 +9,8 @@
 @import "scss/layouts/list.scss";
 @import "scss/layouts/about.scss";
 @import "scss/layouts/l-content.scss";
+@import "scss/layouts/l-header.scss";
+@import "scss/layouts/l-menu.scss";
 
 //modules
 @import "scss/modules/grid-3.scss";
@@ -17,6 +19,9 @@
 @import "scss/modules/anim-badge.scss";
 @import "scss/modules/grid-4.scss";
 @import "scss/modules/hamburger-menu.scss";
+@import "scss/modules/truck-image.scss";
+@import "scss/modules/chef-image.scss";
+@import "scss/modules/menu.scss";
 
 //states
 @import "scss/states/is-expanded-vertical-dropdown.scss";

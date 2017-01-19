@@ -1,0 +1,21 @@
+nav {
+    position: fixed;
+    background-color: white;
+    display: block;
+    width: 100%;
+    height: 7em;
+    max-height: 200px;
+    transition: padding 250ms, height 250ms;
+    overflow: hidden;
+    background-color: pink;
+    @include breakpoint($tablet) {
+        background-color: white;
+    }
+    ul {
+        display: block;
+        width: 100%;
+        height: 2.2em;
+        margin: 0;
+        margin-left: 1em;
+    }
+}

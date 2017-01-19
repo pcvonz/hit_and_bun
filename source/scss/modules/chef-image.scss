@@ -1,0 +1,6 @@
+.chef-image {
+    @include span(4 of 12 last);
+    height: span(4 of 12 last);
+    background-color: black;
+    margin-top: 2em;
+}

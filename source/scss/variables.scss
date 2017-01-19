@@ -1,4 +1,14 @@
- @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@font-face {
+    font-family: 'A love of Thunder';
+    src: url('../fonts/A Love of Thunder.ttf');
+}
+@font-face {
+    font-family: 'Variane Script';
+    src: url('../fonts/Variane Script.ttf');
+}
+
+$primary-color: rgb(81, 31, 48);
+$secondary-color: rgb(195, 30, 37);
 
 $susy: (
     columns: 12,

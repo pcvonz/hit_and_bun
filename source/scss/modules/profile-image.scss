@@ -4,9 +4,10 @@
     background-image: url("../images/profile.png");
     background-position: center center;
     background-size: 10em;
-    border-radius: 100px;
-    height: 10em;
-    width: 10em;
+    $radius: 15.5em;
+    border-radius: $radius;
+    height: $radius;
+    width: $radius;
 }
 
 .about {

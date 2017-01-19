@@ -1,0 +1,8 @@
+.l-menu {
+    @include span(12 of 12);
+    h1 {
+        @include push(4 of 12);
+        @include span(4 of 12);
+        text-align: center;
+    }
+}

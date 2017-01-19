@@ -1,8 +1,8 @@
 .nav-item {
     list-style: none;
-    padding: 0;
-    padding: 1em 0 1em 0;
+    padding: .5em 1em 1em 1em;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 #selected a {

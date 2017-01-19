@@ -31,6 +31,9 @@ gulp.task('js', function() {
                .pipe(gulp.dest('public/js'))
 });
 
+gulp.task('fonts', function() {
+    return gulp.src('source/fonts/**/*.ttf') .pipe(gulp.dest('public/fonts'))
+});
 gulp.task('sass', function(){
     return gulp.src('source/style.scss')
         .pipe(sass({
@@ -56,7 +59,7 @@ gulp.task('browserSync', function() {
 //We put browser sync in an array as the second argument
 //that means that we want to run the browser sync task first
 //and then watch for file changers
-gulp.task('watch', ['browserSync', 'sass', 'images', 'js'], function() {
+gulp.task('watch', ['fonts', 'nunjucks', 'sass', 'images', 'js', 'browserSync'], function() {
     gulp.watch('source/scss/**/*.scss', ['sass']);
     gulp.watch('templates/**/*.html', ['nunjucks']);
     gulp.watch('source/js/**/*.js', ['js', browserSync.reload]);
