@@ -1,5 +1,8 @@
 .truck-image {
-    @include span(8 of 12);
+    @include span(12 of 12);
+    @include breakpoint($tablet) {
+        @include span(8 of 12);
+    }
     height: 300px;
     background-color: black;
     margin-top: 2em;
