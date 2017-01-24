@@ -1,25 +1,3 @@
-.logo-next::before{
-    content: "";
-    @include span(12 of 12);
-    height: span(4);
-    background-image: url("../images/HitandBun_logo.svg");
-}
-.logo-next:after {
-    content: none;
-}
-
-@include breakpoint($tablet) {
-    .logo-next::after{
-        content: "";
-        @include span(4 of 12);
-        height: span(4);
-        background-image: url("../images/HitandBun_logo.svg");
-    }
-    .logo-next::before{
-        content:none; 
-    }
-}
-
 .grid-3 {
     background-color: black;
     margin-top: 2em;

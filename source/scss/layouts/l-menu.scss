@@ -1,4 +1,8 @@
 .l-menu {
+    .grid-3, .grid-3-last {
+        height: 80%;
+        max-height: 500px
+    }
     @include span(12 of 12);
     h1 {
         @include push(4 of 12);

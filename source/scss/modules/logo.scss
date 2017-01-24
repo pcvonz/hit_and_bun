@@ -2,3 +2,32 @@
     height: 100%;
     width: 100%;
 }
+
+.logo-next::before{
+    content: "";
+    @include span(12 of 12);
+    height: span(4);
+    background-image: url("../images/HitandBun_logo.svg");
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.logo-next:after {
+    content: none;
+}
+
+
+@include breakpoint($tablet) {
+    .logo-next::after{
+        content: "";
+        @include span(4 of 12);
+        height: span(4);
+        background-image: url("../images/HitandBun_logo.svg");
+        background-position: center center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+    .logo-next::before{
+        content:none; 
+    }
+}

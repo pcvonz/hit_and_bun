@@ -38,7 +38,7 @@ gulp.task('sass', function(){
     return gulp.src('source/style.scss')
         .pipe(sass({
             outputStyle: 'compressed',
-            includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets']
+            includePaths: ['node_modules/susy/sass', 'node_modules/normalize-scss/sass', 'node_modules/breakpoint-sass/stylesheets']
         }).on('error', sass.logError))
         .pipe(gulp.dest('public/css/'))
         .pipe(browserSync.reload({

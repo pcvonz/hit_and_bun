@@ -1,0 +1,14 @@
+.l-page {
+    height: 100vh;
+    padding-top: 2.9em;
+}
+
+.l-page:nth-child(2n+1) {
+    background-color: purple;
+}
+.l-page:nth-child(2n) {
+   background-color: blue; 
+}
+.l-page:nth-child(3n) {
+   background-color: gray; 
+}

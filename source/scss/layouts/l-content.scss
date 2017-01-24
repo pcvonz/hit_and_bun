@@ -1,11 +1,10 @@
 .content {
     @include container(4 95%);
-    margin-top: 10em;
 }
 
 
 @include breakpoint($tablet) {
     .content {
-        @include container(auto 12 center 90%);
+        @include container(auto 12 center 100%);
     }
 }

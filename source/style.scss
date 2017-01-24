@@ -1,6 +1,7 @@
 //globals / variables
 @import "susy";
 @import "breakpoint";
+@import "normalize";
 @import "scss/variables";
 
 //layouts
@@ -11,6 +12,7 @@
 @import "scss/layouts/l-content.scss";
 @import "scss/layouts/l-header.scss";
 @import "scss/layouts/l-menu.scss";
+@import "scss/layouts/l-pages.scss";
 
 //modules
 @import "scss/modules/grid-3.scss";
@@ -18,6 +20,8 @@
 @import "scss/modules/nav.scss";
 @import "scss/modules/anim-badge.scss";
 @import "scss/modules/grid-4.scss";
+@import "scss/modules/menu-table.scss";
+
 //@import "scss/modules/hamburger-menu.scss";
 @import "scss/modules/truck-image.scss";
 @import "scss/modules/chef-image.scss";
