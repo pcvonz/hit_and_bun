@@ -1,5 +1,5 @@
 nav {
-    background-color: pink;
+    background-color: $secondary-color;
     height: 3em;
 }
 
@@ -11,16 +11,15 @@ nav {
 }
 
 #selected a {
-    color: #ce47a1;
     font-weight: 600;
 }
 
 .nav-item a {
     text-decoration: none;
     @include breakpoint($tablet) {
-        color: black;
+        color: white;
     }
 }
 .nav-item a:hover {
-    color: pink;
+    color: $secondary-color;
 }

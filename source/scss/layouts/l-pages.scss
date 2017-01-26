@@ -1,10 +1,11 @@
 .l-page {
-    height: 100vh;
+    height: 800px;
     padding-top: 2.9em;
 }
 
 .l-page:nth-child(2n+1) {
-    background-color: purple;
+    background-color: rgba(81, 31, 48, 0.9);
+    
 }
 .l-page:nth-child(2n) {
    background-color: blue; 

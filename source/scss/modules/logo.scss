@@ -3,7 +3,10 @@
     width: 100%;
 }
 
+
 .logo-next::before{
+    background-color: white;
+    border-radius: 100%;
     content: "";
     @include span(12 of 12);
     height: span(4);
@@ -12,6 +15,7 @@
     background-size: 80%;
     background-repeat: no-repeat;
 }
+
 .logo-next:after {
     content: none;
 }
