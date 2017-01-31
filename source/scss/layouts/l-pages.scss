@@ -1,5 +1,15 @@
+
+
 .l-page {
-    height: 800px;
+    height: 70vh;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    @include breakpoint($tablet) {
+        position: inherit;
+        height: 70vh;
+        min-height: 600px;
+    }
     padding-top: 2.9em;
 }
 

@@ -2,3 +2,22 @@
    width: 100%; 
    height: 5em;
 }
+
+.mobile-menu {
+    position: relative;
+    z-index: 1000
+} 
+
+#menu-radio:checked + div{
+   z-index: 100;
+   height: 100vh;
+}
+#location-radio:checked + div{
+   z-index: 100;
+   height: 100vh;
+}
+#about-radio:checked + div{
+   z-index: 100;
+   position: relative;
+   height: 100vh;
+}

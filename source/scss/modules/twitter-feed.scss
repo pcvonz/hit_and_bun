@@ -1,0 +1,10 @@
+.twitter-feed {
+    position: relative;
+    top: -120px;
+    background-color: $secondary-color;
+    height: 300px;
+    @include push(1 of 12);
+    @include span(3 of 12);
+    border-radius: 20px;
+    box-shadow: 10px 0 10px rgba(56, 56, 56, 0.29);
+}

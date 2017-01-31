@@ -4,34 +4,33 @@
 }
 
 
-.logo-next::before{
+.logo-next {
     background-color: white;
     border-radius: 100%;
     content: "";
-    @include span(12 of 12);
-    height: span(4);
+    @include span(4 of 12);
+    height: 30vw;
+    position: relative;
+    top: 40%;
     background-image: url("../images/HitandBun_logo.svg");
     background-position: center center;
-    background-size: 80%;
+    background-size: fit;
     background-repeat: no-repeat;
-}
-
-.logo-next:after {
-    content: none;
 }
 
 
 @include breakpoint($tablet) {
-    .logo-next::after{
+    .logo-next {
+        background-color: white;
+        border-radius: 100%;
         content: "";
+        @include push(4 of 12);
         @include span(4 of 12);
-        height: span(4);
+        position: relative;
+        top: 20%;
         background-image: url("../images/HitandBun_logo.svg");
         background-position: center center;
-        background-size: 80%;
+        background-size: fit;
         background-repeat: no-repeat;
-    }
-    .logo-next::before{
-        content:none; 
     }
 }

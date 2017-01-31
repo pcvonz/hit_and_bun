@@ -1,5 +1,5 @@
 body {
-   font-family: 'A Love of Thunder';
+   font-family: 'Fira Sans';
 }
 
 a:visited {
@@ -10,13 +10,13 @@ hr {
     margin: 0;
 }
 
-   body {
-       background-color: white;
-       padding: 10;
-       color: rgb(74, 74, 74);
-       margin: 0;
-       padding: 0;
-   } 
+body {
+   background-color: white;
+   padding: 10;
+   color: rgb(74, 74, 74);
+   margin: 0;
+   padding: 0;
+} 
 
 @include susy-breakpoint($tablet, $mobile-layout) {
     body {
