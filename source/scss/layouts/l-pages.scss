@@ -1,4 +1,12 @@
+.about-section, #location, #menu {
+    visibility: hidden;
+}
 
+@include breakpoint($tablet) {
+.about-section, #location, #menu {
+    visibility: visible;
+}
+}
 
 .l-page {
     height: 70vh;
