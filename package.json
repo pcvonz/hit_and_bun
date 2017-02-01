@@ -6,6 +6,7 @@
     "breakpoint-sass": "^2.7.1",
     "gulp-concat": "^2.6.1",
     "nodemon": "^1.11.0",
+    "normalize-scss": "^6.0.0",
     "normalize.css": "^5.0.0",
     "susy": "^2.2.12"
   },
