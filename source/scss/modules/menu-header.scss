@@ -8,14 +8,8 @@
     bottom: 0;
     z-index: 1000;
 } 
-#about-radio {
-  left: 23%;
-}
-#location-radio {
-  left: 43%;
-}
-#menu-radio {
-  left: 63%;
+#about-radio, #location-radio, #menu-radio {
+  visibility: hidden;
 }
 
 /*@include breakpoint($tablet) {
@@ -35,6 +29,53 @@
      visibility: visible;
   }
 }*/
+label {
+  z-index: 1000000;
+  position: fixed;
+  bottom: 0;
+  cursor: pointer;
+  background-size: contain;
+  height: 30px;
+  padding-top: 2em;
+  background-color: $primary-color;
+}
+
+
+label::after {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  left: 8vw;
+  bottom: .8em;
+}
+
+label[for="about-radio"] {
+  left: 0vw;
+  width: 34vw;
+}
+
+label[for="about-radio"]::after {
+  content: "About";
+}
+
+label[for="location-radio"] {
+  left: 33.633vw;
+  width: 34vw;
+}
+label[for="location-radio"]::after {
+  content: "Location";
+}
+label[for="menu-radio"] {
+  left: 67vw;
+  width: 33vw;
+}
+label[for="menu-radio"]::after {
+  content: "Menu";
+}
+
 @include breakpoint($mobile) {
   html {
     height: 100vh;
@@ -44,16 +85,15 @@
   footer {
     display: none;
   }
-  #menu-radio:checked + div{
-     z-index: 100;
-     height: 100vh;
-     width: 100vw;
-     visibility: visible;
+  $highlight-color: #652f41; 
+  #about-radio:checked  ~ label[for="about-radio"] {
+    background-color: $highlight-color;
   }
-  #location-radio:checked + div{
-     z-index: 100;
-     height: 100vh;
-     visibility: visible;
+  #location-radio:checked  ~ label[for="location-radio"] {
+    background-color: $highlight-color;
+  }
+  #menu-radio:checked  ~ label[for="menu-radio"] {
+    background-color: $highlight-color;
   }
   #about-radio:checked + div{
      z-index: 100;
@@ -61,14 +101,31 @@
      width: 100vw;
      visibility: visible;
    }
+  #location-radio:checked + div{
+     z-index: 100;
+     height: 100vh;
+     visibility: visible;
+  }
+  #menu-radio:checked + div{
+     z-index: 100;
+     height: 100vh;
+     width: 100vw;
+     visibility: visible;
+  }
   .about-section, #location, #menu{
     position: absolute;
+  }
+  nav {
+    display: none;
   }
 }
 
 
 @include breakpoint($tablet) {
   .mobile-menu {
+    display: none;
+  }
+  label {
     display: none;
   }
 }
