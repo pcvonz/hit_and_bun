@@ -4,11 +4,21 @@
 }
 
 .mobile-menu {
-    position: relative;
-    z-index: 1000
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
 } 
+#about-radio {
+  left: 23%;
+}
+#location-radio {
+  left: 43%;
+}
+#menu-radio {
+  left: 63%;
+}
 
-@include breakpoint($tablet) {
+/*@include breakpoint($tablet) {
   #menu-radio:checked + div{
      z-index: 100;
      height: inherit;
@@ -24,19 +34,41 @@
      height: inherit;
      visibility: visible;
   }
+}*/
+@include breakpoint($mobile) {
+  html {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  footer {
+    display: none;
+  }
+  #menu-radio:checked + div{
+     z-index: 100;
+     height: 100vh;
+     width: 100vw;
+     visibility: visible;
+  }
+  #location-radio:checked + div{
+     z-index: 100;
+     height: 100vh;
+     visibility: visible;
+  }
+  #about-radio:checked + div{
+     z-index: 100;
+     height: 100vh;
+     width: 100vw;
+     visibility: visible;
+   }
+  .about-section, #location, #menu{
+    position: absolute;
+  }
 }
-#menu-radio:checked + div{
-   z-index: 100;
-   height: 100vh;
-   visibility: visible;
-}
-#location-radio:checked + div{
-   z-index: 100;
-   height: 100vh;
-   visibility: visible;
-}
-#about-radio:checked + div{
-   z-index: 100;
-   height: 100vh;
-   visibility: visible;
+
+
+@include breakpoint($tablet) {
+  .mobile-menu {
+    display: none;
+  }
 }
