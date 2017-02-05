@@ -9,7 +9,7 @@
 }
 
 .l-page {
-    height: 70vh;
+    height: 60vh;
     top: 0;
     bottom: 0;
     overflow: scroll;
@@ -24,6 +24,10 @@
 
 .l-page:nth-child(2n+1) {
     background-color: rgba(81, 31, 48, 0.9);
+    height: 100vh;
+    @include breakpoint($tablet) {
+      height: 60vh;
+    }
     
 }
 .l-page:nth-child(2n) {

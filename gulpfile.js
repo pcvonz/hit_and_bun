@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var nunjucks = require('gulp-nunjucks');
 var imagemin = require('gulp-imagemin');
+    svgSprite = require('gulp-svg-sprite');
 
 
 //TODO:
@@ -21,11 +22,39 @@ gulp.task('nunjucks', function () {
 
 //Function to optimize images (not really utilized)
 gulp.task('images', function() {
-    return gulp.src('source/images/**/*.+(png|jpg|gif|svg)')
+    return gulp.src('source/images/**/*.+(png|jpg|gif)')
                                        .pipe(imagemin())
                                        .pipe(gulp.dest('public/images'))
 
 });
+
+
+// Config
+//
+//
+
+config                  = {
+    shape               : {
+        dimension       : {         // Set maximum dimensions
+            maxWidth    : 32,
+            maxHeight   : 32
+        },
+        spacing         : {         // Add padding
+         //   padding     : 10
+        },
+        //dest            : 'out/intermediate-svg'    // Keep the intermediate files
+    },
+    mode                : {
+        symbol          : true      // Activate the «symbol» mode
+    }
+};
+
+gulp.task('svg', function() {
+  gulp.src('public/images/**/*.svg')
+                              .pipe(svgSprite(config))
+                              .pipe(gulp.dest('public/css'));
+});
+
 gulp.task('js', function() {
     return gulp.src('source/js/**/*.js')
                .pipe(gulp.dest('public/js'))
@@ -64,5 +93,5 @@ gulp.task('watch', ['fonts', 'nunjucks', 'sass', 'images', 'js', 'browserSync'],
     gulp.watch('source/scss/**/*.scss', ['sass']);
     gulp.watch('templates/**/*.html', ['nunjucks']);
     gulp.watch('source/js/**/*.js', ['js', browserSync.reload]);
-    gulp.watch('source/images/**/*.+(png|jpg|gif|svg)', browserSync.reload);
+    gulp.watch('source/images/**/*.+(png|jpg|gif|svg)', ['images', browserSync.reload]);
 });
