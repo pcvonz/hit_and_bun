@@ -1,5 +1,4 @@
 .about-container {
-    
     height: 30vh;
     position: absolute;
     bottom: -10px;
@@ -11,4 +10,21 @@
     background-color: $secondary-color;
     border-top: .8em solid white;
     border-bottom: .8em solid white;
+    p {
+      display: inline;
+      color: white;
+    }
+
+    .about-info {
+      position: relative;
+      top: 20%;
+      .twitter {
+        @include span(6 of 12);
+      }
+      .location {
+        @include span(6 of 12 last);
+      }
+    }
+
+
 }

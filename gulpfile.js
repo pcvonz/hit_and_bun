@@ -33,26 +33,29 @@ gulp.task('images', function() {
 //
 //
 
-config                  = {
-    shape               : {
-        dimension       : {         // Set maximum dimensions
-            maxWidth    : 32,
-            maxHeight   : 32
-        },
-        spacing         : {         // Add padding
-         //   padding     : 10
-        },
-        //dest            : 'out/intermediate-svg'    // Keep the intermediate files
+config = {
+  shape: {
+    dimension: {         // Set maximum dimensions
+      maxWidth: 32,
+      maxHeight: 32
     },
-    mode                : {
-        symbol          : true      // Activate the «symbol» mode
-    }
+    spacing: {         // Add padding
+     //   padding     : 10
+    },
+    //dest            : 'out/intermediate-svg'    // Keep the intermediate files
+  },
+  mode: {
+    symbol: true      // Activate the «symbol» mode
+  }
 };
 
 gulp.task('svg', function() {
-  gulp.src('public/images/**/*.svg')
+  gulp.src('source/images/**/*.svg')
                               .pipe(svgSprite(config))
-                              .pipe(gulp.dest('public/css'));
+                                .on('error', function(error) {
+                                  console.log(error);
+                                })
+                              .pipe(gulp.dest('templates'));
 });
 
 gulp.task('js', function() {
@@ -89,9 +92,10 @@ gulp.task('browserSync', function() {
 //We put browser sync in an array as the second argument
 //that means that we want to run the browser sync task first
 //and then watch for file changers
-gulp.task('watch', ['fonts', 'nunjucks', 'sass', 'images', 'js', 'browserSync'], function() {
-    gulp.watch('source/scss/**/*.scss', ['sass']);
+gulp.task('watch', ['fonts', 'svg', 'nunjucks', 'sass', 'images', 'js', 'browserSync'], function() {
+    gulp.watch('source/**/*.scss', ['sass']);
     gulp.watch('templates/**/*.html', ['nunjucks']);
     gulp.watch('source/js/**/*.js', ['js', browserSync.reload]);
-    gulp.watch('source/images/**/*.+(png|jpg|gif|svg)', ['images', browserSync.reload]);
+    gulp.watch('source/images/**/*.+(png|jpg|gif)', ['images', browserSync.reload]);
+    gulp.watch('source/images/**/*.svg)', ['svg', browserSync.reload]);
 });

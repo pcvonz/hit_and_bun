@@ -19,7 +19,9 @@
         //min-height: 600px;
         overflow: unset;
     }
-    padding-top: 2.9em;
+    @include breakpoint($tablet) {
+      padding-top: 2.9em;
+    }
 }
 
 .l-page:nth-child(2n+1) {
@@ -31,8 +33,8 @@
     
 }
 .l-page:nth-child(2n) {
-   background-color: blue; 
+   background-color: $primary-color;
 }
 .l-page:nth-child(3n) {
-   background-color: gray; 
+  background-color: $secondary-color;
 }
