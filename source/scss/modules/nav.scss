@@ -1,6 +1,7 @@
 nav {
     background-color: $secondary-color;
     height: 3em;
+    z-index: 1000;
 }
 
 .nav-item {
@@ -22,4 +23,19 @@ nav {
 }
 .nav-item a:hover {
     color: $secondary-color;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  }
+
+
+h1 {
+  a {
+    display: block;
+    position: relative;
+    top: -2em;
+    visibility: hidden;
+  }
 }

@@ -8,7 +8,7 @@
     bottom: 0;
     z-index: 1000;
 } 
-#about-radio, #location-radio, #menu-radio {
+#about-radio, #catering-radio, #menu-radio {
   visibility: hidden;
 }
 
@@ -49,8 +49,7 @@
   text-align: center;
   position: relative;
   left: 8vw;
-  bottom: .8em;
-}
+  bottom: .8em; }
 
 label[for="about-radio"] {
   left: 0vw;
@@ -68,11 +67,11 @@ label[for="menu-radio"] {
 label[for="menu-radio"]::after {
   content: "Menu";
 }
-label[for="location-radio"] {
+label[for="catering-radio"] {
   left: 67vw;
   width: 34vw;
 }
-label[for="location-radio"]::after {
+label[for="catering-radio"]::after {
   content: "Catering";
 }
 
@@ -89,7 +88,7 @@ label[for="location-radio"]::after {
   #about-radio:checked  ~ label[for="about-radio"] {
     background-color: $highlight-color;
   }
-  #location-radio:checked  ~ label[for="location-radio"] {
+  #catering-radio:checked  ~ label[for="catering-radio"] {
     background-color: $highlight-color;
   }
   #menu-radio:checked  ~ label[for="menu-radio"] {
@@ -100,7 +99,7 @@ label[for="location-radio"]::after {
      width: 100vw;
      visibility: visible;
    }
-  #location-radio:checked + div{
+  #catering-radio:checked + div{
      height: 100vh;
      visibility: visible;
   }
@@ -109,7 +108,7 @@ label[for="location-radio"]::after {
      width: 100vw;
      visibility: visible;
   }
-  .about-section, #location, #menu{
+  .about-section, #catering, #menu{
     position: absolute;
   }
   nav {

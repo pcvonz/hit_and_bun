@@ -1,12 +1,17 @@
 footer {
-    float: right;
-    clear: both;
+  background-color:$primary-color;
     .nav-item{
        p {
             line-height: 10px;
          }
        margin-right: 1.2em;
     }
+    width: 100%;
+    color: white;
+}
+
+body {
+  background-color: $primary-color;
 }
 
 

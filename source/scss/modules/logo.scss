@@ -1,41 +1,38 @@
-#logo img {
-    height: 100%;
-    width: 100%;
-}
-
 .logo {
   width: 100%;
   height: 100%;
+  max-height: 300px;
 }
 
 .logo-next {
-    background-color: white;
     border-radius: 100%;
     content: "";
     @include span(4 of 12);
-    height: 30vw;
+    height: 40vw;
     position: relative;
     top: 20%;
     left: 10%;
-    background-image: url("../images/HitandBun_logo.svg");
-    background-position: center center;
-    background-size: fit;
-    background-repeat: no-repeat;
 }
 
 
-@include breakpoint($tablet) {
-    .logo-next {
-        background-color: white;
-        border-radius: 100%;
-        content: "";
-        @include push(4 of 12);
-        @include span(4 of 12);
-        position: relative;
-        top: 20%;
-        background-image: url("../images/HitandBun_logo.svg");
-        background-position: center center;
-        background-size: fit;
-        background-repeat: no-repeat;
+.logo-next {
+  @include breakpoint($tablet) {
+      border-radius: 100%;
+      content: "";
+      @include push(4 of 12);
+      @include span(4 of 12);
+      position: relative;
+      top: 20%;
+      left: 0;
+  }
+  @include breakpoint($desktop) {
+      border-radius: 100%;
+      content: "";
+      height: unset;
+      @include push(10 of 24);
+      @include span(3 of 12);
+      position: relative;
+      top: 15%;
+      left: 0;
     }
 }

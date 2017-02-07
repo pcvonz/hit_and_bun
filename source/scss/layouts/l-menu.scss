@@ -1,11 +1,8 @@
 .l-menu {
-    .grid-3 {
-        height: 52%;
-        max-height: 500px;
-    }
-    .grid-3-last {
-        max-height: 500px;
-        height: 75%;
+    height: 140%;
+    background-color: $primary-color;
+    table { 
+      background-color: $primary-color;
     }
     @include span(12 of 12);
     h1 {
@@ -24,7 +21,44 @@
       background-color: $primary-color;
       padding: 1em;
       margin: 0;
+      position: relative;
+      top: 2em;
     }
+
+    @include breakpoint($tablet) {
+      .grid-3 {
+        height: 80%;
+      }
+      .grid-3-last {
+
+      }
+      background-color: $primary-color;
+    }
+    h2 {
+      padding: 0 0 0 1em;
+      position: relative;
+      top: 1em;;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    @include breakpoint($tablet) {
+      height: 100.0%;
+      background-color: $primary-color;
+    }
+}
+@include breakpoint($tablet) {
+  #menu {
+    position: relative;
+    top: -5.5em;
+    height: 100vh;
+    max-height: 600px;
+  }
+  table {
+    @include span(4 of 12);
+  }
+  table:last-child {
+    @include span(4 of 12 last);
+  }
 }
 
 table {

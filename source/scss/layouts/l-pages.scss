@@ -1,9 +1,17 @@
-.about-section, #location, #menu {
+.about-section, #catering, #menu {
     visibility: hidden;
 }
 
+#menu {
+  background-color: $primary-color;
+}
+
+#catering {
+  background-color: $secondary-color;
+}
+
 @include breakpoint($tablet) {
-.about-section, #location, #menu {
+.about-section, #catering, #menu {
     visibility: visible;
 }
 }
@@ -20,7 +28,7 @@
         overflow: unset;
     }
     @include breakpoint($tablet) {
-      padding-top: 2.9em;
+      position: relative;
     }
 }
 
@@ -38,3 +46,4 @@
 .l-page:nth-child(3n) {
   background-color: $secondary-color;
 }
+

@@ -5,6 +5,7 @@
 {% block content %}
         <div class="content">
             <input class="mobile-menu" id="about-radio" name="menu" type="radio" checked/>
+
             <div class="about-section">
                     <div id="about" class="l-page">
                         <div class="logo-next" > 
@@ -17,13 +18,24 @@
                     <div class="about-info">
                       <div class="twitter"> 
                         <svg class="icon"><use xlink:href="#twitter"/> </svg> 
-                        <p> @hit_and_bun </p> </div>
+                        <p class="twitter-handle"> @hit_and_bun </p> </div>
                       <div class="location"> 
-                        <svg class="icon"><use xlink:href="#location_pin"/> </svg> <p> Denver Colardo </p> </div>
+                        <svg class="icon"><use xlink:href="#location_pin"/> </svg> <p> 2250 E 16th Ave </p> </div>
                     </div>
                     <div class="twitter-feed">
-
-                        <svg class="icon"><use xlink:href="#twitter"/> </svg> <p> Denver Colardo </p> </div>
+                        <svg class="icon"><use xlink:href="#twitter"/> </svg> 
+                        <p class="twitter-handle"> @hit_and_bun </p>
+                        <p class="twitter-entry">
+                          Pulled pork sandwhiches from Hit and Bun!
+                        </p>
+                        <p class="twitter-entry">
+                          We're open! 
+                        </p>
+                        <p class="twitter-entry">
+                          Food truck month, all sandwhiches a dollar off.
+                        </p>
+                    </div>
+                        
                     </div> 
                 </div>
             </div>
@@ -31,10 +43,8 @@
             <input class="mobile-menu" id="menu-radio" name="menu" type="radio"/>
             <div id="menu" class="l-page">
                 <div class="l-menu">
-                    <h1> Menu </h1>
+                  <h1> <a id="menu-anchor"> </a> Menu </h1>
                     <div class="menu-background"> </div>
-                    <h2> Entrees </h2>
-                    <div class="grid-3">
                         <table class="menu-table">
                             <tr>
                                 <th scope="col">The Hit and Bun Sandwich $12</th>
@@ -71,8 +81,6 @@
                                 </td>
                             </tr>
                         </table>
-                    </div>
-                    <div class="grid-3">
                         <table class="menu-table">
                             <tr>
                                 <th scope="col">Smoked Portobello Mushroom $10</th>
@@ -96,8 +104,6 @@
                                 </td>
                             </tr>
                         </table>
-                    </div>
-                    <div class="grid-3-last">
                         <table class="menu-table">
                             <tr>
                                 <th scope="col">Desserts</th>
@@ -151,12 +157,13 @@
                         </table> 
                     </div>
                 </div>
-                </div>
             <label class="mobile-nav" for="menu-radio"></label>
             </div>
 
-            <input class="mobile-menu" id="location-radio" name="menu" type="radio"/>
-            <div id="location" class="l-page catering">
+            <input class="mobile-menu" id="catering-radio" name="menu" type="radio"/>
+            <div id="catering" class="l-page catering">
+              <h1> <a id="catering-anchor"> </a> Catering </h1>
+              <div class="catering-background"> </div>
             <!-- this should probably be renamed to section divider-->
                 <div class="menu-header"> </div>
                 <form> 
@@ -178,7 +185,7 @@
                   
                 </form>
             </div>
-            <label class="mobile-nav" for="location-radio"></label>
+            <label class="mobile-nav" for="catering-radio"></label>
         </div>
         
 {% endblock %}

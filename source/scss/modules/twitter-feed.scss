@@ -12,3 +12,22 @@
     border-radius: 20px;
     box-shadow: 10px 0 10px rgba(56, 56, 56, 0.29);
 }
+.twitter-handle {
+    display: inline;
+}
+.twitter-entry {
+  display: block;
+  padding: 0 1em 0 1em;
+}
+
+.twitter {
+  @include breakpoint($tablet) {
+    display: none;
+  }
+}
+
+.location {
+  p {
+    display: inline;
+  }
+}

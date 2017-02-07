@@ -11,20 +11,18 @@
     <nav class="is-expanded-vertical-dropdown">
             <ul>
                 <li id="{{ id_1 }}" id="selected" class="nav-item"> <a href="#about"> About </a></li>
-                <li id="{{ id_2 }}" class="nav-item"> <a href="#location"> Location </a></li>
-                <li id="{{ id_4 }}" class="nav-item"> <a href="#menu">Menu</a></li>
+                <li id="{{ id_4 }}" class="nav-item"> <a href="#menu-anchor">Menu</a></li>
+                <li id="{{ id_2 }}" class="nav-item"> <a href="#catering-anchor"> Catering </a></li>
         </ul>
     </nav>
     <hr />
     {% block content %}{% endblock %}
     <footer>
-    <hr />
-        <ul>
-            <li class="nav-item"><a href="mailto:pcvonz@gmail.com"><p> hitandbun@hitandbun.com </p></a></li>
-            <li class="nav-item"><a href="https://github.com/pcvonz/"><img src="images/github.png"></a></li>
-            <li class="nav-item"><a href="https://twitter.com/pcvonz"><img height="32" src="images/twitter.png"></a></li>
-        </ul>
+      <ul>
+          <li class="nav-item"><a href="#"><img height="32" src="images/twitter.png"></a></li>
+          <li class="nav-item"><a href="mailto:pcvonz@gmail.com"><p> hitandbun@hitandbun.com </p></a></li>
+          <li class="nav-item">Open 7 Days a week 9am-5pm</li>
+      </ul>
     </footer>
-    <script src="js/select-random.js"></script>
 </body>
 </html>
