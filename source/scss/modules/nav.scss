@@ -11,9 +11,9 @@ nav {
     display: inline-block;
 }
 
-#selected a {
-    font-weight: 600;
-}
+//#selected a {
+//    font-weight: 600;
+//}
 
 .nav-item a {
     text-decoration: none;
@@ -22,7 +22,7 @@ nav {
     }
 }
 .nav-item a:hover {
-    color: $secondary-color;
+  font-weight: 600;
 }
 
 a {

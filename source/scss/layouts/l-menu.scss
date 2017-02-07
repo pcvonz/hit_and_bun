@@ -11,7 +11,7 @@
         padding: 1em 0 1em 0;
         color: white;
         text-align: center;
-        background-color: #c31e2599;
+        background-color: transparentize($secondary-color, .7);
         position: relative;
         z-index: 2;
     }
@@ -67,8 +67,10 @@ table {
 
 th {
   text-align: left;
+  font-weight: 600;
 }
 
 tr {
   color: white;
+  font-weight: 200;
 }

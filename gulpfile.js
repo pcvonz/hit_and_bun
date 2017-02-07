@@ -80,7 +80,7 @@ gulp.task('sass', function(){
 
 gulp.task('browserSync', function() {
     browserSync.init({
-        browser: 'firefox',
+        browser: 'chrome',
         server: {
             baseDir: 'public'
         }
