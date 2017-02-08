@@ -1,5 +1,5 @@
 .l-menu {
-    height: 140%;
+    height: 180%;
     background-color: $primary-color;
     table { 
       background-color: $primary-color;
@@ -11,7 +11,7 @@
         padding: 1em 0 1em 0;
         color: white;
         text-align: center;
-        background-color: transparentize($secondary-color, .7);
+        background-color: transparentize($secondary-color, .4);
         position: relative;
         z-index: 2;
     }
