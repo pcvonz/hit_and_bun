@@ -45,6 +45,7 @@
         @include breakpoint($desktop) {
           @include push(2);
           @include span(3 of 12);
+          max-width: 300px;
         }
       }
     }

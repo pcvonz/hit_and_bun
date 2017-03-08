@@ -1,17 +1,19 @@
 .logo {
   width: 100%;
+  max-height: 300px;
   height: 100%;
-  max-height: 250px;
+  visibility: initial;
+  @include breakpoint($desktop) {
+    max-height: 500px;
+  }
+  align-self: center;
+  justify-self: center;
 }
 
 .logo-next {
-    border-radius: 100%;
-    content: "";
-    @include span(4 of 12);
-    height: 40vw;
-    position: relative;
-    top: 20%;
-    left: 10%;
+    display: flex;
+    align-content: center;
+    height: 50%;
 }
 
 
@@ -19,20 +21,12 @@
   @include breakpoint($tablet) {
       border-radius: 100%;
       content: "";
-      @include push(4 of 12);
-      @include span(4 of 12);
-      position: relative;
-      top: 20%;
-      left: 0;
+      height:100%;
   }
   @include breakpoint($desktop) {
+      height:100%;
+      width: 100%;
       border-radius: 100%;
-      content: "";
-      height: unset;
-      @include push(10 of 24);
-      @include span(3 of 12);
-      position: relative;
-      top: 18%;
-      left: 0;
+      margin-top: 2.9em;
     }
 }
